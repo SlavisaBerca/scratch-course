@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html id="theme" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Continue to Checkout | Neykart</title>
+    <meta name="description" content="Neykart html template live demo. Check out all the features of the template." />
+    <meta name="keywords" content="html5, Tailwind CSS, CSS, JavaScript, Template, Neykart" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicons/favicon.png" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/theme.min.css" />
+
+    <!-- Plugins Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/plugins/bundle.plugins.css" />
+
+  </head>
+
+  <body class="mx-auto bg-gray-50 antialiased">
+    <!-- Loader - Start -->
+    <div id="loader">
+      <div class="nk-loader-fixed">
+        <div class="nk-loader-icon">
+          <svg
+            class="text-primary-300 h-8 w-8 animate-spin"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader - End -->
+    <main>
+      <div class="h-20 w-full bg-gray-900">
+        <div class="mx-auto flex h-full w-full flex-row items-center justify-between px-4 text-gray-50 md:max-w-4xl">
+          <div class="h-7 font-extrabold">
+            <a class="nk-sticky-logo h-full" href="index.html">
+              <img class="objact-contain h-full" src="assets/img/logo-white.svg" alt="" />
+            </a>
+          </div>
+          <div class="hidden sm:block">Sign In to Continue</div>
+          <div class="text-xs hover:underline">
+            <a href="shop.html">
+              <span>Start Shopping</span>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-8 flex w-full flex-col px-4 sm:max-w-4xl sm:flex-row sm:justify-center">
+        <div class="flex w-full flex-col items-center sm:w-10/12">
+          <div class="mb-8 w-[300px] rounded border border-gray-300 bg-white shadow-lg md:w-[350px]">
+            <div class="my-8 space-y-2 px-5 text-left">
+              <h1 class="old pt-5 text-xl font-semibold">Continue to Checkout</h1>
+              <p class="text-sm">
+                Returning customer
+                <br />
+                Welcome Back! Please Log In for fast checkout
+              </p>
+            </div>
+
+            <div class="space-y-4 px-3 pb-10">
+              <form class="space-y-5" action="user-shipping-address.html">
+                <div class="relative z-0 w-full">
+                  <input
+                    id="sign-into-email"
+                    type="text"
+                    name="sign-into-email"
+                    class="peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                    placeholder=" "
+                  />
+                  <label
+                    for="sign-into-email"
+                    class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                    >Email address <span class="font-semibold text-red-600">*</span></label
+                  >
+                </div>
+                <div class="relative z-0 w-full">
+                  <input
+                    id="sign-into-checkout"
+                    type="password"
+                    name="sign-into-checkout"
+                    class="nk-na-password peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                    placeholder=" "
+                  />
+                  <span
+                    data-password-show-hide="#sign-into-checkout"
+                    class="nk-na-toggleHideShow hover:text-primary-800 absolute inset-y-0 right-0 float-right flex cursor-pointer items-center p-1 pr-3 pl-3 text-xs"
+                    >Show</span
+                  >
+                  <label
+                    for="sign-into-checkout"
+                    class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                    >Password <span class="font-semibold text-red-600">*</span></label
+                  >
+                </div>
+                <div class="flex justify-between text-sm">
+                  <div class="flex items-center">
+                    <input
+                      id="checkout-remember-me"
+                      aria-describedby="checkout-remember-me"
+                      type="checkbox"
+                      class="text-primary-600 focus:ring-primary-500 h-4 w-4 rounded border-gray-400 bg-gray-100 focus:ring-2"
+                    />
+                    <label for="checkout-remember-me" class="ml-3 text-sm font-medium text-gray-900">Remember me</label>
+                  </div>
+                  <div>
+                    <span
+                      ><a class="text-blue-500 hover:text-blue-700" href="forgetpassword-email.html"
+                        >Forget Password?</a
+                      ></span
+                    >
+                  </div>
+                </div>
+                <button class="btn-gradient btn-full">Sign In</button>
+                <div class="flex w-full flex-row items-center">
+                  <span class="w-2/5 border-b"></span>
+                  <span class="w-1/5 text-center">or</span>
+                  <span class="w-2/5 border-b"></span>
+                </div>
+              </form>
+              <button
+                class="focus:shadow-outline focus:border-primary-800 focus:bg-primary-800 focus:ring-primary-500 flex w-full flex-row justify-center rounded-md border border-gray-400 py-3 text-sm ring-offset-2 transition duration-300 ease-in-out hover:border-transparent hover:bg-gray-900 hover:text-gray-50 focus:text-white focus:outline-none focus:ring-2"
+              >
+                <span class="mr-2"> <i class="fab fa-apple"></i></span>
+                Sign In with Apple
+              </button>
+              <button
+                class="focus:shadow-outline focus:border-primary-800 focus:bg-primary-800 focus:ring-primary-500 flex w-full flex-row justify-center rounded-md border border-blue-400 py-3 text-sm ring-offset-2 transition duration-300 ease-in-out hover:border-transparent hover:bg-blue-700 hover:text-gray-50 focus:text-white focus:outline-none focus:ring-2"
+              >
+                <span class="mr-2"> <i class="fab fa-google"></i></span>
+                Sign In with Google
+              </button>
+              <div class="text-center text-xs">
+                <div class="mt-5 border-t border-gray-200 text-center text-xs">
+                  <div class="mt-5">This site is protected by reCAPTCHA and the Google</div>
+                  <a href="signin-to-checkout.html#" class="font-medium text-blue-500 hover:text-blue-700">Privacy Policy </a>and
+                  <a href="signin-to-checkout.html#" class="font-medium text-blue-500 hover:text-blue-700">Terms of Service </a>apply.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-8 hidden w-2/12 flex-col items-center sm:flex">
+          <div class="h-full border-l border-gray-400"></div>
+        </div>
+        <div class="flex w-full flex-col items-center sm:w-10/12">
+          <div class="my-8">
+            <div class="mx-auto w-[300px] space-y-2 border border-gray-200 bg-white p-5 text-sm md:w-[350px]">
+              <h1 class="text-xl font-semibold">New customer</h1>
+              <p>Joining Sign up below - it's free &amp; fast</p>
+              <p>
+                <span class="mr-2"><i class="fas fa-check"></i></span>Get 10 OFF on your first purchase
+              </p>
+              <p>
+                <span class="mr-2"><i class="fas fa-check"></i></span>Save products and review them later
+              </p>
+              <p>
+                <span class="mr-2"><i class="fas fa-check"></i></span>View order history
+              </p>
+              <a href="signup.html">
+                <div class="btn btn-outline btn-full my-2">Create Account</div>
+              </a>
+            </div>
+            <div class="mx-auto mt-5 w-[300px] space-y-2 border border-gray-200 bg-white p-5 text-sm md:w-[350px]">
+              <h1 class="text-xl font-semibold">Guest customer</h1>
+              <p>In hurry? Not ready for sign up today?</p>
+              <a href="guest-personal-information.html">
+                <div class="btn btn-outline btn-full my-2">Continue as Guest</div>
+              </a>
+            </div>
+          </div>
+          <div></div>
+          <div
+            class="mx-auto mt-3 flex max-w-md flex-row justify-center space-x-4 py-10 text-xs font-bold text-gray-900"
+          >
+            <a class="hover:underline" href="signin-to-checkout.html#">Terms of Services</a>
+            <a class="hover:underline" href="signin-to-checkout.html#">Privacy Policy</a>
+            <a class="hover:underline" href="signin-to-checkout.html#">Contact us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top - Start -->
+      <button id="back-to-top" class="nk-scroll-to-top" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- Back to Top - End -->
+    </main>
+
+    <!-- Main JS -->
+    <script defer src="assets/global/js/main.min.js"></script>
+
+    <!-- Plugins Bundle JS -->
+    <script src="assets/global/js/plugins/bundle.plugins.js"></script>
+
+  </body>
+</html>

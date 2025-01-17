@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html id="theme" lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Neykart Main | Neykart</title>
+    <meta name="description" content="Neykart html template live demo. Check out all the features of the template." />
+    <meta name="keywords" content="html5, Tailwind CSS, CSS, JavaScript, Template, Neykart" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicons/favicon.png" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/theme.min.css" />
+
+    <!-- Plugins Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/plugins/bundle.plugins.css" />
+
+  </head>
+
+  <body class="mx-auto bg-gray-50 antialiased">
+    <!-- Loader - Start -->
+    <div id="loader">
+      <div class="nk-loader-fixed">
+        <div class="nk-loader-icon">
+          <svg
+            class="text-primary-300 h-8 w-8 animate-spin"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader - End -->
+    <main>
+      <main class="font-open-sans bg-white">
+        <header class="sticky top-0 z-50 flex h-16 items-center bg-white shadow-lg sm:h-20">
+          <div class="container mx-auto flex items-center justify-between pl-8">
+            <div class="nk-logo">
+              <a class="text-primary h-full" href="index.html">
+                <img class="h-full object-contain" src="assets/img/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="flex items-center justify-center">
+              <nav
+                id="nav-menu"
+                class="absolute left-0 top-16 z-30 flex hidden w-full flex-col items-center bg-white p-2 text-sm font-bold uppercase tracking-widest text-gray-900 shadow-lg lg:static lg:block lg:flex-row lg:flex-nowrap lg:shadow-none"
+              >
+                <a href="index.html#demos" class="hover:text-primary py-2 px-8 hover:underline"> Demos </a>
+                <a href="index.html#headers" class="hover:text-primary relative py-2 px-8 hover:underline">
+                  Headers
+                  <span class="absolute -top-1 right-1 inline-block h-9 w-9 object-contain">
+                    <img src="assets/img/gif/new.gif" alt="" /> </span
+                ></a>
+                <a href="index.html#pages" class="hover:text-primary py-2 px-8 hover:underline"> Pages </a>
+                <a href="index.html#features" class="hover:text-primary py-2 px-8 hover:underline"> Features </a>
+                <a href="index.html#documentation" class="hover:text-primary py-2 px-8 hover:underline"> Documentation </a>
+                <a href="index.html#support" class="hover:text-primary py-2 px-8 hover:underline"> Support </a>
+              </nav>
+              <button onclick="show_mob_menu();" class="ml-4 mr-8 flex h-6 w-6 flex-col lg:hidden">
+                <span class="mb-1 h-px w-6 rounded bg-gray-900"></span>
+                <span class="mb-1 h-px w-6 rounded bg-gray-900"></span>
+                <span class="mb-1 h-px w-6 rounded bg-gray-900"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="from-primary-100 w-full bg-gradient-to-r to-green-200 p-2">
+          <div class="container relative mx-auto flex flex-col items-center px-8 py-4 lg:flex-row lg:py-20">
+            <div class="flex flex-col items-center lg:w-1/2 lg:items-start">
+              <p class="text-center text-2xl font-bold leading-relaxed text-gray-800 sm:text-4xl lg:text-left">
+                Neykart is multipurpose eCommerce HTML5 TailwindCSS template
+              </p>
+              <div class="xs:mt-5 mt-3 flex items-center space-x-4 sm:mt-8">
+                <div>
+                  <div class="text-sm text-gray-700">Homepages</div>
+                  <div class="text-primary text-2xl font-extrabold">3+</div>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-700">Headers</div>
+                  <div class="text-primary text-2xl font-extrabold">6+</div>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-700">Inner Pages</div>
+                  <div class="text-primary text-2xl font-extrabold">75+</div>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-700">Elements</div>
+                  <div class="text-primary text-2xl font-extrabold">30+</div>
+                </div>
+              </div>
+              <div class="space xs:mt-12 mt-7 flex h-10 items-center space-x-3 rounded bg-white py-3 px-2 shadow-lg">
+                <span class="whitespace-nowrap text-sm">Powered by: </span>
+                <span class="flex h-full w-full items-center">
+                  <img class="h-full object-contain" src="assets/img/tools/html.png" alt="html" />
+                </span>
+                <span class="flex h-full w-full items-center">
+                  <img class="h-full object-contain" src="assets/img/tools/css3.png" alt="css" />
+                </span>
+                <span class="flex h-full w-full items-center">
+                  <img class="h-full object-contain" src="assets/img/tools/tailwindcss.png" alt="tailwindcss" />
+                </span>
+                <span class="flex h-full w-full items-center">
+                  <img class="h-full object-contain" src="assets/img/tools/javascript.png" alt="javascript" />
+                </span>
+                <span class="flex h-full w-full items-center">
+                  <img class="h-full object-contain" src="assets/img/tools/gulp.png" alt="gulp" />
+                </span>
+                <span class="flex h-full w-full items-center">
+                  <img class="h-full object-contain" src="assets/img/tools/babel.png" alt="babel" />
+                </span>
+              </div>
+              <a
+                href="index.html#demos"
+                class="bg-primary hover:bg-primary-800 mt-8 rounded-full py-3 px-8 text-base font-bold uppercase tracking-widest text-white"
+                >Live Demos</a
+              >
+            </div>
+            <div class="mt-16 h-full w-full sm:w-1/2">
+              <img class="hidden h-full text-xs md:block" src="assets/img/tools/main.png" alt="Image Error" />
+            </div>
+          </div>
+        </div>
+        <!-- Homepages Section - Start -->
+        <div id="demos" class="w-full">
+          <div class="container mx-auto px-6 py-8">
+            <h1 class="text-2xl font-semibold text-gray-800">Home Demos</h1>
+            <h1 class="text-sm font-semibold text-gray-500">Explore our ready pre-built homepage</h1>
+            <div class="mt-5 grid grid-cols-1 gap-10 md:grid-cols-2">
+              <div class="text-center">
+                <a href="index-fashion.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/home/fashion.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Fashion</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="index-furniture.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/home/furniture.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Furniture</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="index-grocery.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/home/grocery.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Grocery</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <img class="rounded shadow-lg" src="assets/img/tools/home/coming-soon.jpg" alt="" />
+                <h1 class="mt-4 text-sm text-gray-800">Coming Soon</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Homepages Section - End -->
+        <!-- Header Style Section - Start -->
+        <div id="headers" class="w-full">
+          <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-row flex-nowrap items-center">
+              <h1 class="text-2xl font-semibold text-gray-800">Header Styles</h1>
+              <span class="inline-block h-9 w-9 object-contain"> <img src="assets/img/gif/new.gif" alt="" /> </span>
+            </div>
+            <h1 class="text-sm font-semibold text-gray-500">Explore our ready pre-built headers</h1>
+            <div class="mt-5 grid grid-cols-1 gap-10 md:grid-cols-2">
+              <div class="text-center">
+                <a href="header-2.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-2.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 2</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="header-3.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-3.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 3</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="header-4.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-4.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 4</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="header-5.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-5.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 5</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="header-6.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-6.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 6</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="header-7.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-7.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 7</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="header-8.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/headers/header-8.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Header 8</h1></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Style Section - End -->
+        <!-- Inner pages Section - Start -->
+        <div id="pages">
+          <div class="container mx-auto mt-5 px-4 py-4 sm:py-6 sm:px-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Inner Pages</h1>
+            <div class="mt-5 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class="text-center">
+                <a href="shop-product.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/shop-product.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Product Page</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="shop-grid-left-sidebar.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/shop-grid-left-sidebar.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Shop Grid - Left Sidebar</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="cart.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/cart-2.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Cart 1</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="shop-list-left-sidebar.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/shop-list-left-sidebar.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Shop List - Left Sidebar</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="about.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/about.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">About</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="shop-grid-right-sidebar.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/shop-grid-right-sidebar.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Shop Grid - Right Sidebar</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="checkout.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/checkout.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Checkout</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="shop-list-right-sidebar.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/shop-list-right-sidebar.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Shop List - Right Sidebar</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="signin-to-checkout.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/signin-to-checkout.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">User & Guest Multi-Step Checkout</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="blog.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/blog-list.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Blog List</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="signin.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/signin.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Sign In</h1></a
+                >
+              </div>
+              <div class="text-center">
+                <a href="signup.html">
+                  <img class="rounded shadow-lg" src="assets/img/tools/inners/signup.jpg" alt="" />
+                  <h1 class="mt-4 text-sm text-gray-800">Sign Up</h1></a
+                >
+              </div>
+            </div>
+
+            <h1 class="mt-8 text-xl font-semibold text-gray-800">Other Pages</h1>
+            <h1 class="text-sm font-semibold text-gray-500">Explore inner pages</h1>
+            <div class="mt-3 flex w-full flex-col space-x-0 lg:flex-row lg:space-x-4">
+              <div class="flex w-full flex-col sm:flex-row lg:w-2/3">
+                <div class="w-full sm:w-1/2">
+                  <a class="nk-dropdown-nav-link" href="2F-authentication.html">Two-Factor Authentication</a>
+                  <a class="nk-dropdown-nav-link" href="account-offers-deals.html">Account Offers Deals</a>
+                  <a class="nk-dropdown-nav-link" href="account-orders-purchase.html">Account Orders</a>
+                  <a class="nk-dropdown-nav-link" href="account-settings.html">Account Settings</a>
+                  <a class="nk-dropdown-nav-link" href="account-shipping-billing.html">Account Shipping & Billing</a>
+                  <a class="nk-dropdown-nav-link" href="forgetpassword-email.html">Forget Password - Email</a>
+                  <a class="nk-dropdown-nav-link" href="forgetpassword-phone.html">Forget Password - Phone</a>
+                  <a class="nk-dropdown-nav-link" href="guest-personal-information.html"
+                    >Guest - Personal Information</a
+                  >
+                </div>
+                <div class="w-full sm:w-1/2">
+                  <a class="nk-dropdown-nav-link" href="guest-shipping-address.html">Guest - Shipping Address</a>
+                  <a class="nk-dropdown-nav-link" href="guest-billing-address.html">Guest - Billing Address</a>
+                  <a class="nk-dropdown-nav-link" href="guest-payment-method.html">Guest - Payment Method</a>
+                  <a class="nk-dropdown-nav-link" href="guest-confirm-pay.html">Guest - Confirm & Pay</a>
+                  <a class="nk-dropdown-nav-link" href="guest-order-confirmation.html">Guest - Order Confirmation</a>
+                  <a class="nk-dropdown-nav-link" href="reset-code-email.html">Reset Code - Email</a>
+                  <a class="nk-dropdown-nav-link" href="https://demo.neytok.com/html/neykart/reset-code-phone.html">Reset Code - Phone</a>
+                  <a class="nk-dropdown-nav-link" href="reset-password.html">Reset Password</a>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 lg:w-1/3">
+                <a class="nk-dropdown-nav-link" href="track-order.html">Track Order</a>
+                <a class="nk-dropdown-nav-link" href="user-shipping-address.html">User - Shipping Address</a>
+                <a class="nk-dropdown-nav-link" href="user-billing-address.html">User - Billing Address</a>
+                <a class="nk-dropdown-nav-link" href="user-payment-method.html">User - Payment Method</a>
+                <a class="nk-dropdown-nav-link" href="user-confirm-pay.html">User - Confirm & Pay</a>
+                <a class="nk-dropdown-nav-link" href="user-order-confirmation.html">User - Order Confirmation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner pages Section - End -->
+        <!-- Features Section - Start -->
+        <div id="features">
+          <div class="container mx-auto mt-5 px-4 py-4 sm:px-6 sm:py-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Neykart Features</h1>
+            <p class="text-gray-500">Neykart is built with many features</p>
+            <!-- Main Template Features -->
+            <div class="bg-white">
+              <div class="mb-5 text-center">
+                <p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                  Why Neykart?
+                </p>
+              </div>
+              <div class="my-12 flex flex-wrap">
+                <div class="xs:p-3 w-full border-b p-2 sm:p-6 md:w-1/2 md:border-r lg:w-1/3">
+                  <div class="mb-6 flex items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="text-primary-500 h-6 w-6"
+                      viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"
+                      ></path>
+                    </svg>
+                    <div class="ml-4 text-xl">Fast Loading Speed</div>
+                  </div>
+                  <p class="text-md leading-loose text-gray-500">
+                    We make use of modern practices like such as image optimization, SVGs, decreasing the number of HTTP
+                    requests etc., so that the web page remains lightweight and the loading speed of the website is very
+                    high.
+                  </p>
+                </div>
+                <div class="xs:p-3 w-full border-b p-2 sm:p-6 md:w-1/2 lg:w-1/3 lg:border-r">
+                  <div class="mb-6 flex items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="text-primary-500 h-6 w-6"
+                      viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"
+                      ></path>
+                    </svg>
+                    <div class="ml-4 text-xl">Product Overlays</div>
+                  </div>
+                  <p class="text-md leading-loose text-gray-500">
+                    Discover more beautiful overlays option to every product image such as Add to Cart, Add to wishlist
+                    and Compare Icons.
+                  </p>
+                </div>
+                <div class="xs:p-3 w-full border-b p-2 sm:p-6 md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0">
+                  <div class="mb-6 flex items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="text-primary-500 h-6 w-6"
+                      viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"
+                      ></path>
+                    </svg>
+                    <div class="ml-4 text-xl">Mini-Cart</div>
+                  </div>
+                  <p class="text-md leading-loose text-gray-500">
+                    We have created a mini-cart for easy and faster checkout.
+                  </p>
+                </div>
+                <div class="xs:p-3 w-full border-b p-2 sm:p-6 md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0">
+                  <div class="mb-6 flex items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="text-primary-500 h-6 w-6"
+                      viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"
+                      ></path>
+                    </svg>
+                    <div class="ml-4 text-xl">Dropdown & Mega Menu</div>
+                  </div>
+                  <p class="text-md leading-loose text-gray-500">
+                    Neykart comes with very unique animated dropdown menu and Super Mega-Menu for large Online Stores.
+                  </p>
+                </div>
+                <div
+                  class="xs:p-3 w-full border-b p-2 sm:p-6 md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0"
+                >
+                  <div class="mb-6 flex items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="text-primary-500 h-6 w-6"
+                      viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"
+                      ></path>
+                    </svg>
+                    <div class="ml-4 text-xl">Well-structured Code</div>
+                  </div>
+                  <p class="text-md leading-loose text-gray-500">
+                    We deliver clean, easy to editable, bug-free HTML/ CSS code. The code follows proper formatting and
+                    W3C standards and has comments where required.
+                  </p>
+                </div>
+                <div class="w-full p-8 md:w-1/2 lg:w-1/3">
+                  <div class="mb-6 flex items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="text-primary-500 h-6 w-6"
+                      viewBox="0 0 1792 1792"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z"
+                      ></path>
+                    </svg>
+                    <div class="ml-4 text-xl">Slides</div>
+                  </div>
+                  <p class="text-md leading-loose text-gray-500">
+                    Neykart Template has Hero Slide which are powered by Swiper JS, which is easy to use and customize.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Main Template Features -->
+            <div class="mt-5 grid grid-cols-1 gap-10 text-xs uppercase sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/html.png" alt="" />
+                </div>
+                <div>HTML5</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/css3.png" alt="" />
+                </div>
+                <div>CSS3</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/tailwindcss.png" alt="" />
+                </div>
+                <div>TailwindCSS</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/javascript.png" alt="" />
+                </div>
+                <div>Javascript</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/gulp.png" alt="" />
+                </div>
+                <div>Gulp</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/autoprefixer.png" alt="" />
+                </div>
+                <div>Autoprefixer</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/fontawesome.png" alt="" />
+                </div>
+                <div>FontAwesome</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/code.png" alt="" />
+                </div>
+                <div>Clean Code</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/swiperjs.png" alt="" />
+                </div>
+                <div>Swiper JS</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/responsive.png" alt="" />
+                </div>
+                <div>Device Responsive</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/w3c-1.png" alt="" />
+                </div>
+                <div>W3C Validation</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/support.png" alt="" />
+                </div>
+                <div>Free Support</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/babel.png" alt="" />
+                </div>
+                <div>Babel</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/update.png" alt="" />
+                </div>
+                <div>Free Update</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/customize.png" alt="" />
+                </div>
+                <div>Easy to Customize</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/browser.png" alt="" />
+                </div>
+                <div>Cross Browser Compatible</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/seo.png" alt="" />
+                </div>
+                <div>SEO Friendly</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/view.png" alt="" />
+                </div>
+                <div>Quick View</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/font.png" alt="" />
+                </div>
+                <div>Google Font</div>
+              </div>
+              <div class="flex h-40 flex-col flex-nowrap items-center justify-center rounded">
+                <div class="mb-3 flex h-full w-full items-center justify-center rounded bg-gray-100">
+                  <img class="h-16" src="assets/img/tools/docs.png" alt="" />
+                </div>
+                <div>Well Documentation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Features Section - End -->
+        <!-- Documentation Section - Start -->
+        <div id="documentation">
+          <div class="container mx-auto mt-5 px-4 py-4 sm:px-6 sm:py-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Our Documentation</h1>
+            <div class="mt-5">
+              <p class="text-gray-500">
+                Well Documentation is available within the Neykart downloaded file from your evanto account.
+              </p>
+            </div>
+          </div>
+          <!-- Documentation Section - End -->
+        </div>
+        <!-- Support Section - Start -->
+        <div id="support">
+          <div class="container mx-auto mt-5 px-4 py-4 sm:px-6 sm:py-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Support & Customization</h1>
+            <!-- Why US Section - Start -->
+            <div class="container my-10 mx-auto">
+              <!-- Section: Design Block -->
+              <div class="mb-32 text-gray-800">
+                <h2 class="mb-12 text-center text-3xl font-bold">What we offer</h2>
+                <div class="flex flex-wrap items-center">
+                  <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-6 lg:mb-0 lg:w-5/12">
+                    <div
+                      class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg"
+                      style="background-position: 50%"
+                    >
+                      <img src="assets/img/tools/home/furniture.jpg" class="w-full" />
+                      <a href="index-furniture.html">
+                        <div
+                          class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed"
+                          style="background-color: rgba(0, 0, 0, 0.5)"
+                        >
+                          <div class="flex h-full items-center justify-center">
+                            <div class="px-6 py-12 text-center text-white md:px-12">
+                              <h3 class="mb-6 text-2xl font-bold uppercase">HOME FURNITURE</h3>
+                              <p>View Furniture Store.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                          <div
+                            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                            style="background-color: rgba(251, 251, 251, 0.2)"
+                          ></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="w-full shrink-0 grow-0 basis-auto md:px-6 lg:w-7/12">
+                    <div class="mb-12 flex">
+                      <div class="shrink-0">
+                        <div class="rounded-md p-4 shadow-lg">
+                          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                              fill="currentColor"
+                              d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4 grow">
+                        <p class="mb-1 font-bold">Support 24/7</p>
+                        <p class="text-gray-500">Our Support team will always get back to you within 24h.</p>
+                      </div>
+                    </div>
+
+                    <div class="mb-12 flex">
+                      <div class="shrink-0">
+                        <div class="rounded-md p-4 shadow-lg">
+                          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                              fill="currentColor"
+                              d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4 grow">
+                        <p class="mb-1 font-bold">Premium Support</p>
+                        <p class="text-gray-500">
+                          If you need more customization we are here to make it right for you.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="mb-12 flex">
+                      <div class="shrink-0">
+                        <div class="rounded-md p-4 shadow-lg">
+                          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                              fill="currentColor"
+                              d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h272c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h208c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H64v128c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4 grow">
+                        <p class="mb-1 font-bold">Web Design & Development</p>
+                        <p class="text-gray-500">
+                          We can design & development a new custom website for any kind of business from small business
+                          to large business.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mb-12 flex">
+                      <div class="shrink-0">
+                        <div class="rounded-md p-4 shadow-lg">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                      </div>
+                      <div class="ml-4 grow">
+                        <p class="mb-1 font-bold">Sen us email</p>
+                        <p class="text-gray-500">neytokweb[at]gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Section: Design Block -->
+              </div>
+              <!-- Why US Section - End -->
+            </div>
+          </div>
+          <div class="bg-white">
+            <div class="z-20 mx-auto mb-8 w-full py-3 px-4 text-center sm:px-6 lg:px-8">
+              <h2 class="text-3xl font-extrabold text-black sm:text-4xl">
+                <span class="block"> Are you Ready to kickstart your online business ? </span>
+                <span class="text-primary-500 block"> It&#x27;s today or never. </span>
+              </h2>
+              <p class="mx-auto mt-4 max-w-md text-xl text-gray-400">
+                We here to help you to get your online business to the customer its easy and simple.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Support Section - End -->
+        <footer class="w-full bg-gray-900 text-xs text-gray-50">
+          <div class="sm:py6 container mx-auto flex items-center p-2 px-4 py-4 sm:px-6">
+            <div class="w-full">
+              <h1 class="">Copyright &copy; <span id="copyright-year"></span> Neykart | All Rights Reserved.</h1>
+            </div>
+          </div>
+        </footer>
+      </main>
+      <!-- Back to Top - Start -->
+      <button id="back-to-top" class="nk-scroll-to-top" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- Back to Top - End -->
+      <button id="back-to-top" class="nk-scroll-to-top" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- Back to Top - End -->
+    </main>
+
+    <!-- Main JS -->
+    <script defer src="assets/global/js/main.min.js"></script>
+
+    <!-- Plugins Bundle JS -->
+    <script src="assets/global/js/plugins/bundle.plugins.js"></script>
+
+
+    <script>
+      let mob_menu = document.getElementById("nav-menu");
+      function show_mob_menu() {
+        if (mob_menu.classList.contains("hidden")) {
+          mob_menu.classList.remove("hidden");
+        } else {
+          mob_menu.classList.add("hidden");
+        }
+      }
+    </script>
+  </body>
+</html>

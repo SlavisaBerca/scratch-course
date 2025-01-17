@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html id="theme" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Create Account | Neykart</title>
+    <meta name="description" content="Neykart html template live demo. Check out all the features of the template." />
+    <meta name="keywords" content="html5, Tailwind CSS, CSS, JavaScript, Template, Neykart" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicons/favicon.png" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/theme.min.css" />
+
+    <!-- Plugins Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/plugins/bundle.plugins.css" />
+
+  </head>
+
+  <body class="mx-auto bg-gray-50 antialiased">
+    <!-- Loader - Start -->
+    <div id="loader">
+      <div class="nk-loader-fixed">
+        <div class="nk-loader-icon">
+          <svg
+            class="text-primary-300 h-8 w-8 animate-spin"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader - End -->
+    <main>
+      <div class="h-20 w-full bg-gray-900">
+        <div class="mx-auto flex h-full w-full flex-row items-center justify-between px-4 text-gray-50 md:max-w-4xl">
+          <div class="h-7 font-extrabold">
+            <a class="nk-sticky-logo h-full" href="index.html">
+              <img class="objact-contain h-full" src="assets/img/logo-white.svg" alt="" />
+            </a>
+          </div>
+          <div class="hidden sm:block">Create Account</div>
+          <div class="text-xs hover:underline">
+            <a href="shop.html">
+              <span>Start Shopping</span>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-12 flex w-full flex-col items-center justify-center px-4 sm:mt-16 sm:max-w-md">
+        <div class="w-[290px] rounded border border-gray-300 bg-white shadow-lg sm:w-[350px]">
+          <div class="my-8 space-y-2 text-center">
+            <h1 class="pt-5 text-2xl">Create Account</h1>
+            <p class="text-sm">Join our Platform today for better user Experience!</p>
+          </div>
+
+          <div class="space-y-10 px-3 pb-10">
+            <form class="space-y-6">
+              <div class="relative z-0 w-full">
+                <input
+                  id="fullname-signup"
+                  type="text"
+                  name="fullname-signup"
+                  class="peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label
+                  for="fullname-signup"
+                  class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  >Full Name <span class="font-semibold text-red-600">*</span></label
+                >
+              </div>
+              <div class="relative z-0 w-full">
+                <input
+                  id="username-signup"
+                  type="text"
+                  name="username-signup"
+                  class="peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label
+                  for="username-signup"
+                  class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  >Username <span class="font-semibold text-red-600">*</span></label
+                >
+              </div>
+              <div class="relative z-0 w-full">
+                <input
+                  id="sign-up-email"
+                  type="email"
+                  name="sign-up-email"
+                  class="peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label
+                  for="sign-up-email"
+                  class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  >Email address <span class="font-semibold text-red-600">*</span></label
+                >
+              </div>
+              <div class="relative z-0 w-full">
+                <input
+                  id="signup-password"
+                  type="password"
+                  name="signup-password"
+                  class="nk-na-password peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                  required=""
+                />
+                <span
+                  data-password-show-hide="#signup-password"
+                  class="nk-na-toggleHideShow hover:text-primary-800 absolute inset-y-0 right-0 float-right flex cursor-pointer items-center p-1 pr-3 pl-3 text-xs"
+                  >Show</span
+                >
+                <label
+                  for="signup-password"
+                  class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  >Enter password <span class="font-semibold text-red-600">*</span></label
+                >
+              </div>
+              <div class="relative z-0 w-full">
+                <input
+                  id="confirm-password"
+                  type="password"
+                  name="confirm-password"
+                  class="nk-na-password peer focus:border-primary-600 block w-full appearance-none border-0 border-b-2 border-gray-400 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                  required=""
+                />
+                <label
+                  for="confirm-password"
+                  class="peer-focus:text-primary-600 absolute top-2 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75"
+                  >Confirm password <span class="font-semibold text-red-600">*</span></label
+                >
+              </div>
+              <button id="submitButton" class="btn-gradient btn-full">Create Account</button>
+              <div class="flex w-full flex-row items-center">
+                <span class="w-2/5 border-b"></span>
+                <span class="w-1/5 text-center">or</span>
+                <span class="w-2/5 border-b"></span>
+              </div>
+            </form>
+            <button
+              class="focus:shadow-outline focus:border-primary-800 focus:bg-primary-800 focus:ring-primary-500 flex w-full flex-row justify-center rounded-md border border-gray-400 py-3 text-sm ring-offset-2 transition duration-300 ease-in-out hover:border-transparent hover:bg-gray-900 hover:text-gray-50 focus:text-white focus:outline-none focus:ring-2"
+            >
+              <span class="mr-2"> <i class="fab fa-apple"></i></span>
+              Sign In with Apple
+            </button>
+            <button
+              class="focus:shadow-outline focus:border-primary-800 focus:bg-primary-800 focus:ring-primary-500 flex w-full flex-row justify-center rounded-md border border-blue-400 py-3 text-sm ring-offset-2 transition duration-300 ease-in-out hover:border-transparent hover:bg-blue-700 hover:text-gray-50 focus:text-white focus:outline-none focus:ring-2"
+            >
+              <span class="mr-2"> <i class="fab fa-google"></i></span>
+              Sign In with Google
+            </button>
+            <div class="pt-5 text-sm">
+              <p class="border-t border-gray-200 pt-3">
+                Have an account?
+                <a class="hover:text-blue- font-bold text-blue-500 hover:underline" href="signin.html">Sign In</a>
+              </p>
+            </div>
+            <div class="text-center text-xs">
+              <p class="pt-1">
+                By continuing you agree to our
+                <a class="text-blue-500 hover:text-blue-600 hover:underline" href="signup.html#">Terms of Services</a>, our
+                <a class="text-blue-500 hover:text-blue-600 hover:underline" href="signup.html#">Privacy Policy</a>, and
+                <a class="hover:text-blue- text-blue-500 hover:underline" href="signup.html#">Cookie Policy</a>.
+              </p>
+              <div class="mt-5 border-t border-gray-200 text-center text-xs">
+                <div class="mt-5">This site is protected by reCAPTCHA and the Google</div>
+                <a href="signup.html#" class="font-medium text-blue-500 hover:text-blue-700">Privacy Policy </a>and
+                <a href="signup.html#" class="font-medium text-blue-500 hover:text-blue-700">Terms of Service </a>apply.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 flex flex-row justify-center space-x-4 py-10 text-xs font-bold text-gray-900">
+          <a class="hover:underline" href="signup.html#">Terms of Services</a>
+          <a class="hover:underline" href="signup.html#">Privacy Policy</a>
+          <a class="hover:underline" href="signup.html#">Contact us</a>
+        </div>
+      </div>
+      <!-- Back to Top - Start -->
+      <button id="back-to-top" class="nk-scroll-to-top" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- Back to Top - End -->
+    </main>
+
+    <!-- Main JS -->
+    <script defer src="assets/global/js/main.min.js"></script>
+
+    <!-- Plugins Bundle JS -->
+    <script src="assets/global/js/plugins/bundle.plugins.js"></script>
+
+  </body>
+</html>

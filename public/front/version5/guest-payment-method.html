@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html id="theme" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Guest - Payment Method | Neykart</title>
+    <meta name="description" content="Neykart html template live demo. Check out all the features of the template." />
+    <meta name="keywords" content="html5, Tailwind CSS, CSS, JavaScript, Template, Neykart" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicons/favicon.png" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/theme.min.css" />
+
+    <!-- Plugins Stylesheet -->
+    <link rel="stylesheet" href="assets/global/css/plugins/bundle.plugins.css" />
+
+  </head>
+  <body class="mx-auto bg-gray-50 antialiased">
+    <!-- Loader - Start -->
+    <div id="loader">
+      <div class="nk-loader-fixed">
+        <div class="nk-loader-icon">
+          <svg
+            class="text-primary-300 h-8 w-8 animate-spin"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader - End -->
+    <main>
+      <div>
+        <div class="h-20 w-full bg-gray-900">
+          <div class="mx-auto flex h-full w-full flex-row items-center justify-between px-4 text-gray-50 md:max-w-4xl">
+            <div class="h-7 font-extrabold">
+              <a class="nk-sticky-logo h-full" href="index.html">
+                <img class="objact-contain h-full" src="assets/img/logo-white.svg" alt="" />
+              </a>
+            </div>
+            <div class="hidden sm:block">Payment Method - Checkout</div>
+            <div class="text-xs hover:underline">
+              <a href="cart.html">
+                <span><i class="fas fa-chevron-left"></i></span>
+                <span>Back to Shopping Cart</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto mt-8 flex w-full flex-col flex-wrap px-4 sm:flex-row sm:flex-nowrap sm:justify-center md:max-w-4xl"
+        >
+          <div class="mx-auto flex w-full flex-col items-center sm:w-10/12">
+            <div class="mb-8 w-full space-y-2 rounded border border-gray-400 bg-white px-3 py-5 text-left shadow-md">
+              <div class="flex justify-between">
+                <h1 class="text-base font-semibold">1. Personal Information:</h1>
+                <div class="cursor-pointer text-sm text-sky-600 hover:underline">
+                  <a href="guest-personal-information.html">Edit</a>
+                </div>
+              </div>
+              <div class="">
+                <p class="text-sm">Mary John Smith</p>
+                <p class="text-sm">maryjohndoe@email.com</p>
+                <p class="text-sm">(123) 345-6789</p>
+              </div>
+            </div>
+            <div class="mb-8 w-full space-y-2 rounded border border-gray-400 bg-white px-4 py-5 text-left shadow-md">
+              <div class="flex justify-between">
+                <h1 class="text-base font-semibold">2. Shipping Address &amp; Method:</h1>
+                <div class="cursor-pointer text-sm text-sky-600 hover:underline">
+                  <a href="guest-shipping-address.html">Edit</a>
+                </div>
+              </div>
+              <div class="">
+                <p class="text-sm">Mary John Smith</p>
+                <p class="text-sm">(123) 345-6789</p>
+                <p class="text-sm">12345 N Park Ave, STE 67110, Elkhart, IN, 46514</p>
+              </div>
+            </div>
+            <div class="mb-8 w-full space-y-2 rounded border border-gray-400 bg-white px-4 py-5 text-left shadow-md">
+              <div class="flex justify-between">
+                <h1 class="text-base font-semibold">3. Billing Details:</h1>
+                <div class="cursor-pointer text-sm text-sky-600 hover:underline">
+                  <a href="guest-billing-address.html">Edit</a>
+                </div>
+              </div>
+              <div class="">
+                <p class="text-sm">Mary John Smith</p>
+                <p class="text-sm">(123) 345-6789</p>
+                <p class="text-sm">12345 N Park Ave, STE 67110, Elkhart, IN, 46514</p>
+              </div>
+            </div>
+            <div class="mb-8 w-full space-y-2 rounded border border-gray-400 bg-white px-4 py-5 text-left shadow-md">
+              <div class="space-y-2 text-left">
+                <div class="flex items-center justify-between pt-5">
+                  <h1 class="text-base font-semibold">4. Payment Method:</h1>
+                  <p class="text-sm font-extralight text-gray-400">
+                    <span><i class="fas fa-lock"></i> Secure</span>
+                  </p>
+                </div>
+                <div class="space-y-4 text-sm">
+                  <div class="flex items-center justify-between">
+                    <div class="hover:text-primary">
+                      <label class="cursor-pointer text-sm" for="creditcard">
+                        <input
+                          class="focus:border-primary-500 text-primary focus:ring-primary-500"
+                          type="radio"
+                          id="creditcard"
+                          checked="checked"
+                          name="payment"
+                          value="creditcard"
+                        />
+                        <span><i class="fas fa-credit-card"></i></span> Pay with Credit/Debit Card
+                      </label>
+                    </div>
+                    <div class="hover:text-primary">
+                      <label class="cursor-pointer text-sm" for="paypal">
+                        <input
+                          class="focus:border-primary-500 text-primary focus:ring-primary-500"
+                          type="radio"
+                          id="paypal"
+                          name="payment"
+                          value="paypal"
+                        />
+                        <span><i class="fab fa-paypal fab-2x"></i></span> PayPal
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="py-1">We accept the following Credit/Debit Card:</p>
+                    <div class="flex flex-auto justify-between rounded border-2 border-gray-500 px-3 py-2 text-3xl">
+                      <span><i class="fab fa-cc-visa"></i></span>
+                      <span><i class="fab fa-cc-mastercard"></i></span>
+                      <span><i class="fab fa-cc-amex"></i></span>
+                      <span><i class="fab fa-cc-discover"></i></span>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="py-1">Please fill your credit/debit card information's:</p>
+                  </div>
+                </div>
+              </div>
+              <div id="billingAddress" class="pb-5">
+                <form class="space-y-4" action="guest-confirm-pay.html">
+                  <div class="focus-within:border-primary-800 rounded border-2 border-gray-400 px-3">
+                    <p class="py-1 text-xs">CardHolder Full Name <span class="font-semibold text-red-600">*</span></p>
+                    <div class="flex flex-auto flex-row items-center py-2">
+                      <span class="pr-2 text-xs"><i class="far fa-user"></i></span>
+                      <input
+                        class="w-full appearance-none border-transparent text-sm focus:border-transparent focus:ring-0"
+                        type="text"
+                        name="FullName"
+                        id="guest-addNewCardFullName"
+                        placeholder="Enter cardholder name..."
+                        autocomplete="off"
+                        autofocus
+                      />
+                      <span class="pr-2 text-xs text-green-700"><i class="fas fa-check"></i></span>
+                    </div>
+                  </div>
+                  <div class="focus-within:border-primary-800 rounded border-2 border-gray-400 px-3">
+                    <p class="py-1 text-xs">Card Number <span class="font-semibold text-red-600">*</span></p>
+                    <div class="flex flex-auto flex-row items-center py-2">
+                      <span class="pr-2 text-xs"><i class="far fa-credit-card"></i></span>
+                      <input
+                        class="w-full appearance-none border-transparent text-sm focus:border-transparent focus:ring-0"
+                        type="text"
+                        name="CardNumber"
+                        id="guest-addNewCardCardNumber"
+                        placeholder="1111 2222 3333 4444 5555"
+                        autocomplete="off"
+                      />
+                      <span id="guest-toggleCheck" class="pr-2 text-xs text-green-700"
+                        ><i class="fas fa-check"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col space-x-0 space-y-4 sm:flex-row sm:flex-nowrap sm:space-y-0 sm:space-x-4">
+                    <div class="focus-within:border-primary-800 w-full rounded border-2 border-gray-400 px-3 sm:w-1/2">
+                      <p class="py-1 text-xs">Expiry Date <span class="font-semibold text-red-600">*</span></p>
+                      <div class="flex flex-auto flex-row items-center py-2">
+                        <span class="pr-2 text-xs"><i class="far fa-calendar"></i></span>
+                        <input
+                          class="w-full appearance-none border-transparent text-sm focus:border-transparent focus:ring-0"
+                          type="text"
+                          name="ExpirationDate"
+                          id="guest-addNewCardExperationDate"
+                          placeholder="mm/yyy"
+                          autocomplete="off"
+                        />
+                        <span class="pr-2 text-xs text-green-700"><i class="fas fa-check"></i></span>
+                      </div>
+                    </div>
+                    <div class="focus-within:border-primary-800 w-full rounded border-2 border-gray-400 px-3 sm:w-1/2">
+                      <p class="py-1 text-xs">Security Code <span class="font-semibold text-red-600">*</span></p>
+                      <div class="flex flex-auto flex-row items-center py-2">
+                        <span class="pr-2 text-xs"><i class="far fa-credit-card"></i></span>
+                        <input
+                          class="w-full appearance-none border-transparent text-sm focus:border-transparent focus:ring-0"
+                          type="text"
+                          name="cvv"
+                          id="guest-addNewCardCvv"
+                          placeholder="CVV/CVV2"
+                          autocomplete="off"
+                        />
+                        <span class="pr-2 text-xs text-green-700"><i class="fas fa-check"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn-gradient btn-full">
+                    <span> Continue to Confirm & Pay </span>
+                    <span class="ml-2"><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="px-3">
+              <p class="text-xs text-gray-400">
+                <span><i class="fas fa-lock"></i></span> Your payment is secure with 3D secure to ensure no transactions
+                can be made without approval.
+                <span>
+                  <a class="hover:text-primary hover:underline" href="guest-payment-method.html#">Learn more</a>
+                </span>
+              </p>
+            </div>
+            <div class="mx-auto my-10 hidden w-[300px] px-5 sm:block sm:w-full">
+              <div
+                class="flex cursor-not-allowed justify-between rounded border-2 border-gray-400 bg-gray-100 px-3 py-2 text-sm text-gray-400"
+              >
+                <span>5. Confirm &amp; Pay</span>
+                <span><i class="fas fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="hidden flex-col items-center sm:flex sm:w-2/12">
+            <div class="h-full border-l border-gray-400"></div>
+          </div>
+          <div class="mx-auto flex w-full flex-col items-center sm:w-10/12 sm:items-start">
+            <div class="sticky top-5 w-full">
+              <div class="w-full space-y-2 rounded border border-gray-200 bg-white p-5 text-sm shadow-md">
+                <h1 class="border-b border-gray-400 pb-2 text-center text-base font-semibold">Order Summary</h1>
+                <div>
+                  <form class="flex items-center space-x-2">
+                    <div class="w-2/3">
+                      <input
+                        class="focus:ring-primary focus:border-primary w-full rounded border border-gray-400 bg-gray-100 p-2 outline-none focus:outline-none focus:ring-1"
+                        type="text"
+                        id="guest-promo-code"
+                        placeholder="Enter Promo code here..."
+                      />
+                    </div>
+                    <div class="w-1/3">
+                      <button class="w-full rounded bg-gray-200 py-2 text-gray-600">Apply</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="space-y-2 pt-3">
+                  <div class="flex items-center justify-between">
+                    <p class="font-semibold">Subtotal <span class="font-normal">(3 items)</span> :</p>
+                    <p>$184.85</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p class="font-semibold">Shipping:</p>
+                    <p class="text-lightBlue-600 cursor-pointer text-xs hover:underline">Two-Day Delivery</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p class="font-semibold">Saving/Promo Code:</p>
+                    <p>-</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p class="text-lightBlue-600 cursor-pointer hover:underline">Estimate Tax</p>
+                    <p class="text-xs italic">See in Checkout</p>
+                  </div>
+                  <div
+                    class="flex items-center justify-between border-t border-b border-gray-400 py-2 text-lg font-semibold"
+                  >
+                    <p class="">Total:</p>
+                    <p>$184.85</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-16 w-full bg-gray-900">
+          <div
+            class="mx-auto flex h-full w-full flex-col-reverse items-center justify-between space-y-3 px-4 text-xs text-gray-100 sm:max-w-4xl sm:flex-row sm:space-y-0"
+          >
+            <div class="pb-2 sm:pb-0">
+              Copyright &copy; <span id="copyright-year"></span> Neykart | All Rights Reserved.
+            </div>
+            <div class="flex flex-row space-x-2 text-xs">
+              <div><a class="hover:underline" href="guest-payment-method.html#">Privacy Policy</a></div>
+              <div>|</div>
+              <div><a class="hover:underline" href="guest-payment-method.html#">Cookie Policy</a></div>
+              <div>|</div>
+              <div><a class="hover:underline" href="guest-payment-method.html#">Terms of Use</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Back to Top - Start -->
+    <button id="back-to-top" class="nk-scroll-to-top" title="Go to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top - End -->
+
+    <!-- Main JS -->
+    <script defer src="assets/global/js/main.min.js"></script>
+
+    <!-- Plugins Bundle JS -->
+    <script src="assets/global/js/plugins/bundle.plugins.js"></script>
+
+  </body>
+</html>
