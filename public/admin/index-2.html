@@ -1,0 +1,40 @@
+@foreach($this->getHolders as $showHolderDetails)
+<flux:modal :name="'view-phone-number'.$showHolderDetails->id"  variant="flyout" class="space-y-12  !text-black dark:!text-white" wire:key="{{ $showHolderDetails->id }}">
+    <div >
+        <flux:heading size="lg">Phone Number Details</flux:heading>
+       
+    </div>
+    <div class="w-full text-center mt-2 mb-2"><h3>Basic Informations</h3></div>
+    <div class="w-full mb-2 mt-4 flex justify-between border-b border-gray-500">
+       <span>Phone Id: </span>
+        <span>{{ $showHolderDetails->id }}</span>
+    </div>
+    <div class="w-full mb-2 mt-4 flex justify-between border-b border-gray-500 cursor-pointer"
+        x-clipboard.raw="{{ $showHolderDetails->phone }}"
+        x-clipboard-datatype="phone-number-phone"
+        x-clipboard-data-identity="{{ $showHolderDetails->id }}"
+    >
+        <span>Phone Number: </span>
+         <span>{{ $showHolderDetails->phone }}</span>
+     </div>
+     <div class="w-full mb-2 mt-4 flex justify-between border-b border-gray-500 cursor-pointer"
+     x-clipboard.raw="{{ $showHolderDetails->status }}"
+     x-clipboard-datatype="phone-number-status"
+     x-clipboard-data-identity="{{ $showHolderDetails->id }}"
+     >
+        <span>Status : </span>
+         <span>{{ $showHolderDetails->status }}</span>
+     </div>
+    <div class="w-full mb-2 mt-4 flex justify-between border-b border-gray-500">
+        <span>View Buyer Accounts</span>
+        @if($showHolderDetails->buyerAccounts->count() > 0)
+        <flux:modal.trigger :name="'view-buyer-accounts'.$showHolderDetails->id">
+            <flux:button size="xs" icon="chevron-down" variant="subtle"  />
+        </flux:modal.trigger> 
+        @endif
+        
+    </div>
+
+</flux:modal>
+
+@endforeach
